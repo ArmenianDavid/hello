@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+}
+
+.headerContainer{
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo{
+  width: 280px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.menuLi{
+  display: none;
+}
+
+.header li{
+  list-style: none;
+}

@@ -1,0 +1,21 @@
+body{
+  background-color: darkgrey;
+}
+
+a{
+  text-decoration: none;
+  padding: 10px;
+  color : black;
+  text-transform: uppercase;
+}
+.headerMenu{
+  display: flex;
+  justify-content: space-around;
+}
+.headerMenu li {
+  list-style: none;
+  padding: 10px;
+}
+.headerMenu li:hover{
+  background-color: gray;
+}
