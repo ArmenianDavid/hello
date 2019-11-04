@@ -9,8 +9,9 @@ class List extends React.Component{
     super();
     this.state={
       loading : false,
-      photo : 1,
+      question : 1,
       points : 0,
+      notChecked : 'false',
     }
   }
 
@@ -20,29 +21,55 @@ class List extends React.Component{
   
 
   handleChangePhoto  = (direction) =>{
-     let nextPhoto = this.state.photo
+     let nextQuestion = this.state.question
 
-     nextPhoto = direction === 'next' ? nextPhoto + 1 : nextPhoto - 1;
+     nextQuestion = direction === 'next' ? nextQuestion + 1 : nextQuestion - 1;
 
-     this.setState({ photo : nextPhoto}, ()=> this.handleChangePhoto)
+
+     this.setState({ question : nextQuestion,}, ()=> this.handleChangePhoto)
+  }
+
+  handleChange = (event) =>{
+
+      
+       const {id,value} = event.target
+       if(id ==='0' && value ==='Charlotta'){
+          this.setState({points : this.state.points + 1})
+          alert('Yes you are right and you gain 1 pont')
+           }else if(id ==='1' && value === 'Gintama'){
+              this.setState({points : this.state.points + 1})
+              alert('Yes you are right and you gain 1 pont')
+              }else if(id ==='2' && value === 'One punch man'){
+                this.setState({points : this.state.points + 1})
+                alert('Yes you are right and you gain 1 pont')
+                }else if(id ==='3' && value === '7 deadly sins'){
+                  this.setState({points : this.state.points + 1})
+                  alert('Yes you are right and you gain 1 pont')
+                   }else if(id ==='4' && value === 'Miss Kobayashi"s Dragon Maid'){
+                    this.setState({points : this.state.points + 1})
+                  alert('Yes you are right and you gain 1 pont')}
+                    console.log(this.state.points,id,value)
+                    
+
+
   }
 
   render(){
     return(
       <div className='output'>
           
-          <Anime  
-          id={this.state.photo}
+          <Anime 
+          handleChange={this.handleChange} 
+          id={this.state.question}
           handleAnswer ={this.handleAnswer}
           />
-
+          <h1 style={{color:'red'}}>{this.state.points}</h1> 
           <Pagination 
           handleChangePhoto = {this.handleChangePhoto}
-          photo = {this.state.photo}    
+          question = {this.state.question}    
           />
 
-          {this.state.points}
-
+          
       </div>
     )
   }

@@ -5,12 +5,12 @@ const Pagination = (props) =>{
     <div>
       <button
         onClick={()=> props.handleChangePhoto('prev')}
-        disabled={props.photo === 0}
+        disabled={true}
            > &larr; </button>
 
        <button
            onClick={()=> props.handleChangePhoto('next')}
-           disabled={props.photo === 4}
+           disabled={props.question === 4}
            > &rarr; </button>
     </div>
   )

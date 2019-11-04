@@ -7,9 +7,11 @@ const Question = (props) =>{
     <div> 
         <p> 
           <input 
+              id={props.id}
               type='radio' 
-              name={props.name} 
+              name={props.name}
               value={props.title1} 
+              onChange={props.handleChange}
               style={{width : '20px', height : '20px'}} 
               className='answerInput' />
           <span className='animeNames' > {props.title1} </span>
@@ -17,9 +19,11 @@ const Question = (props) =>{
            
            <p> 
           <input 
+              id={props.id}
               type='radio' 
               name={props.name} 
-              value={props.title2} 
+              value={props.title2}
+              onChange={props.handleChange} 
               style={{width : '20px', height : '20px'}} 
               className='answerInput' />
           <span className='animeNames'> {props.title2} </span>
@@ -27,9 +31,11 @@ const Question = (props) =>{
            
            <p> 
           <input 
+              id={props.id}
               type='radio' 
               name={props.name} 
-              value={props.title3} 
+              value={props.title3}
+              onChange={props.handleChange} 
               style={{width : '20px', height : '20px'}} 
               className='answerInput' />
           <span className='animeNames'> {props.title3} </span>
@@ -37,9 +43,11 @@ const Question = (props) =>{
 
            <p> 
           <input 
+              id={props.id}
               type='radio' 
               name={props.name}
               value={props.title4} 
+              onChange={props.handleChange}
               style={{width : '20px', height : '20px'}} 
               className='answerInput' />
           <span className='animeNames'> {props.title4} </span>

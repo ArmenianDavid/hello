@@ -4,3 +4,12 @@
   align-items: center;
   align-content: center;
 }
+.output p{
+  border-radius: 20px;
+  width: 80%;
+  background-color: aliceblue;
+} 
+
+.output img{
+  width: 80%;
+}

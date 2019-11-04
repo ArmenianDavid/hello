@@ -13,6 +13,7 @@ const Anime = (props) =>{
        number : 1,    
        img : <img src={anime1} alt='anime1' />,
        question : <Question
+                   handleChange={props.handleChange}
                    handleAnswer ={props.handleAnswer}
                    name={anime1}
                    id={props.id}
@@ -24,6 +25,7 @@ const Anime = (props) =>{
      { number : 2, 
        img : <img src={anime2} alt='anime2' />,
        question : <Question
+                    handleChange={props.handleChange}
                     handleAnswer ={props.handleAnswer}
                     name={anime2}
                     id={props.id} 
@@ -36,6 +38,7 @@ const Anime = (props) =>{
       number : 3, 
      img : <img src={anime3} alt='anime3' />,
      question : <Question
+                    handleChange={props.handleChange}
                     handleAnswer ={props.handleAnswer}
                     name={anime3}
                     id={props.id}
@@ -48,6 +51,7 @@ const Anime = (props) =>{
       number : 4,   
      img : <img src={anime4} alt='anime4' />,
      question : <Question
+                    handleChange={props.handleChange}
                     handleAnswer ={props.handleAnswer}
                     name={anime4}
                     id={props.id}
@@ -60,6 +64,7 @@ const Anime = (props) =>{
      number : 5,  
      img : <img src={anime5} alt='anime5' />,
      question : <Question 
+                    handleChange={props.handleChange}
                     handleAnswer ={props.handleAnswer}
                     name={anime5}
                     id={props.id}
@@ -67,7 +72,7 @@ const Anime = (props) =>{
                     title2='Miss Kobayashi"s Dragon Maid'
                     title3='Shelter'
                     title4='Out of Sight' />
-      },
+      }
   ]
   
   return(
