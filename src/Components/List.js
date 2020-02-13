@@ -61,7 +61,6 @@ class List extends React.Component{
           <Anime 
           handleChange={this.handleChange} 
           id={this.state.question}
-          handleAnswer ={this.handleAnswer}
           />
           <h1 style={{color:'red'}}>{this.state.points}</h1> 
           <Pagination 

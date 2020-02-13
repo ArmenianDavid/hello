@@ -14,7 +14,6 @@ const Anime = (props) =>{
        img : <img src={anime1} alt='anime1' />,
        question : <Question
                    handleChange={props.handleChange}
-                   handleAnswer ={props.handleAnswer}
                    name={anime1}
                    id={props.id}
                    title1='No game no life' 
@@ -26,7 +25,6 @@ const Anime = (props) =>{
        img : <img src={anime2} alt='anime2' />,
        question : <Question
                     handleChange={props.handleChange}
-                    handleAnswer ={props.handleAnswer}
                     name={anime2}
                     id={props.id} 
                     title1='Run with the Wind' 
@@ -39,7 +37,6 @@ const Anime = (props) =>{
      img : <img src={anime3} alt='anime3' />,
      question : <Question
                     handleChange={props.handleChange}
-                    handleAnswer ={props.handleAnswer}
                     name={anime3}
                     id={props.id}
                     title1='Super king' 
@@ -52,7 +49,6 @@ const Anime = (props) =>{
      img : <img src={anime4} alt='anime4' />,
      question : <Question
                     handleChange={props.handleChange}
-                    handleAnswer ={props.handleAnswer}
                     name={anime4}
                     id={props.id}
                     title1='The Rising of the Axe Hero' 
@@ -65,7 +61,6 @@ const Anime = (props) =>{
      img : <img src={anime5} alt='anime5' />,
      question : <Question 
                     handleChange={props.handleChange}
-                    handleAnswer ={props.handleAnswer}
                     name={anime5}
                     id={props.id}
                     title1='Pennywise' 

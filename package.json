@@ -1,8 +1,8 @@
 {
-  "name": "hello",
+  "name": "honey",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ArmenianDavid.github.io/hello/",
+  "homepage": "https://ArmenianDavid.github.io/honey/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
