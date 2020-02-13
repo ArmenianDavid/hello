@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/hello/static/css/main.ab57a46e.chunk.css",
-    "main.js": "/hello/static/js/main.10093685.chunk.js",
-    "main.js.map": "/hello/static/js/main.10093685.chunk.js.map",
-    "runtime~main.js": "/hello/static/js/runtime~main.f3b3c316.js",
-    "runtime~main.js.map": "/hello/static/js/runtime~main.f3b3c316.js.map",
-    "static/js/2.3658fc53.chunk.js": "/hello/static/js/2.3658fc53.chunk.js",
-    "static/js/2.3658fc53.chunk.js.map": "/hello/static/js/2.3658fc53.chunk.js.map",
-    "index.html": "/hello/index.html",
-    "precache-manifest.fa858f06bb2930b83225085691e1a0c3.js": "/hello/precache-manifest.fa858f06bb2930b83225085691e1a0c3.js",
-    "service-worker.js": "/hello/service-worker.js",
-    "static/css/main.ab57a46e.chunk.css.map": "/hello/static/css/main.ab57a46e.chunk.css.map",
-    "static/media/anime1.jpg": "/hello/static/media/anime1.41dd3ac5.jpg",
-    "static/media/anime2.jpg": "/hello/static/media/anime2.2d778dc9.jpg",
-    "static/media/anime3.jpg": "/hello/static/media/anime3.d7f8c34e.jpg",
-    "static/media/anime4.png": "/hello/static/media/anime4.718dc0ce.png",
-    "static/media/anime5.png": "/hello/static/media/anime5.513dce80.png",
-    "static/media/Index.css": "/hello/static/media/bg.3a089a77.jpg"
+    "main.css": "/anime-test-2/static/css/main.990f86c2.chunk.css",
+    "main.js": "/anime-test-2/static/js/main.c7d72787.chunk.js",
+    "main.js.map": "/anime-test-2/static/js/main.c7d72787.chunk.js.map",
+    "runtime~main.js": "/anime-test-2/static/js/runtime~main.6ed93cde.js",
+    "runtime~main.js.map": "/anime-test-2/static/js/runtime~main.6ed93cde.js.map",
+    "static/js/2.3658fc53.chunk.js": "/anime-test-2/static/js/2.3658fc53.chunk.js",
+    "static/js/2.3658fc53.chunk.js.map": "/anime-test-2/static/js/2.3658fc53.chunk.js.map",
+    "index.html": "/anime-test-2/index.html",
+    "precache-manifest.12d7c52da279b91764c99f1c43e1aad4.js": "/anime-test-2/precache-manifest.12d7c52da279b91764c99f1c43e1aad4.js",
+    "service-worker.js": "/anime-test-2/service-worker.js",
+    "static/css/main.990f86c2.chunk.css.map": "/anime-test-2/static/css/main.990f86c2.chunk.css.map",
+    "static/media/anime1.jpg": "/anime-test-2/static/media/anime1.41dd3ac5.jpg",
+    "static/media/anime2.jpg": "/anime-test-2/static/media/anime2.2d778dc9.jpg",
+    "static/media/anime3.jpg": "/anime-test-2/static/media/anime3.d7f8c34e.jpg",
+    "static/media/anime4.png": "/anime-test-2/static/media/anime4.718dc0ce.png",
+    "static/media/anime5.png": "/anime-test-2/static/media/anime5.513dce80.png",
+    "static/media/Index.css": "/anime-test-2/static/media/bg.3a089a77.jpg"
   }
 }
