@@ -1,0 +1,13 @@
+.Header {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.Header-heading {
+    color: aqua;
+    font-weight: 900;
+    font-size: 50px;
+    box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    font-size: 5vw;
+}
