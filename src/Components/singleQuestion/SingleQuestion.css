@@ -1,0 +1,10 @@
+.question-container {
+    padding: 1rem;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+.image {
+    width: 100%;
+}
