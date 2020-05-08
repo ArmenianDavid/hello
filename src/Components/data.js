@@ -14,18 +14,22 @@ const data = [
             {
                 id: uuid(),
                 title: "No game no life",
+                correct: false,
             },
             {
                 id: uuid(),
                 title: "Charlotta",
+                correct: true,
             },
             {
                 id: uuid(),
                 title: "Yuri!!! on Ice",
+                correct: false,
             },
             {
                 id: uuid(),
                 title: "Your name",
+                correct: false,
             },
         ],
     },
@@ -36,18 +40,22 @@ const data = [
             {
                 id: uuid(),
                 title: "Run with the Wind",
+                correct: false,
             },
             {
                 id: uuid(),
                 title: "Eve no Jikan",
+                correct: false,
             },
             {
                 id: uuid(),
                 title: "Mob Psycho 100",
+                correct: false,
             },
             {
                 id: uuid(),
                 title: "Gintama",
+                correct: true,
             },
         ],
     },
@@ -57,19 +65,23 @@ const data = [
         answers: [
             {
                 id: uuid(),
-                title: "Run with the Wind",
+                title: "One punch man",
+                correct: true,
             },
             {
                 id: uuid(),
                 title: "Eve no Jikan",
+                correct: false,
             },
             {
                 id: uuid(),
-                title: "Mob Psycho 100",
+                title: "Run with the Wind",
+                correct: false,
             },
             {
                 id: uuid(),
-                title: "Gintama",
+                title: "King Artur",
+                correct: false,
             },
         ],
     },
@@ -80,19 +92,23 @@ const data = [
             {
                 id: uuid(),
                 title: "The Rising of the Axe Hero",
+                correct: false,
             },
             {
                 id: uuid(),
                 title: "One punch man",
+                correct: false,
             },
             {
                 id: uuid(),
                 title: "7 deadly sins",
+                correct: true,
             },
             {
                 id: uuid(),
                 title:
                     "JoJo’s Bizarre Adventure: Stardust Crusaders - Battle in Egypt",
+                correct: false,
             },
         ],
     },
@@ -103,18 +119,22 @@ const data = [
             {
                 id: uuid(),
                 title: "Pennywise",
+                correct: false,
             },
             {
                 id: uuid(),
                 title: 'Miss Kobayashi"s Dragon Maid',
+                correct: true,
             },
             {
                 id: uuid(),
                 title: "Shelter",
+                correct: false,
             },
             {
                 id: uuid(),
                 title: "Out of Sight",
+                correct: false,
             },
         ],
     },
