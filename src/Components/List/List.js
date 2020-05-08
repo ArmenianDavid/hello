@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "./List.css";
 import SingleQuestion from "../singleQuestion/SingleQuestion";
 import Pagination from "../Pagination/Pagination";
+// material ui
+import { Button, Card } from "@material-ui/core";
 
 const QUESTIONS_PER_PAGE = 1;
 
@@ -15,6 +17,7 @@ const List = ({ data, getCheckedAnswers }) => {
         indexOfFirstQuestion,
         indexOfLastQuestion
     );
+    const isLastQuestion = currentPage === totalPages;
 
     const handlePaginationChange = (event, value) => {
         setCurrentPage(value);
@@ -22,25 +25,38 @@ const List = ({ data, getCheckedAnswers }) => {
 
     return (
         <div className="list-container">
-            <div>
-                {currentQuerstions.map((item) => {
-                    return (
-                        <SingleQuestion
-                            key={item.id}
-                            id={item.id}
-                            img={item.img}
-                            answers={item.answers}
-                            getCheckedAnswers={getCheckedAnswers}
-                        />
-                    );
-                })}
-            </div>
-            <div>
-                <Pagination
-                    totalPages={totalPages}
-                    handlePaginationChange={handlePaginationChange}
-                />
-            </div>
+            <Card>
+                <div>
+                    {currentQuerstions.map((item) => {
+                        return (
+                            <SingleQuestion
+                                key={item.id}
+                                id={item.id}
+                                img={item.img}
+                                answers={item.answers}
+                                getCheckedAnswers={getCheckedAnswers}
+                            />
+                        );
+                    })}
+                </div>
+                {isLastQuestion ? (
+                    <div className="submitButton-container">
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            size="large"
+                        >
+                            Submit
+                        </Button>
+                    </div>
+                ) : null}
+                <div>
+                    <Pagination
+                        totalPages={totalPages}
+                        handlePaginationChange={handlePaginationChange}
+                    />
+                </div>
+            </Card>
         </div>
     );
 };
