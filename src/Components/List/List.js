@@ -3,12 +3,13 @@ import React, { useState } from "react";
 import "./List.css";
 import SingleQuestion from "../singleQuestion/SingleQuestion";
 import Pagination from "../Pagination/Pagination";
+import TransitionsModal from "../modal/Modal";
 // material ui
-import { Button, Card } from "@material-ui/core";
+import { Card } from "@material-ui/core";
 
 const QUESTIONS_PER_PAGE = 1;
 
-const List = ({ data, getCheckedAnswers }) => {
+const List = ({ data, getCheckedAnswers, handleSubmit, points }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const indexOfLastQuestion = currentPage * QUESTIONS_PER_PAGE;
     const indexOfFirstQuestion = indexOfLastQuestion - QUESTIONS_PER_PAGE;
@@ -41,13 +42,18 @@ const List = ({ data, getCheckedAnswers }) => {
                 </div>
                 {isLastQuestion ? (
                     <div className="submitButton-container">
-                        <Button
+                        {/* <Button
                             variant="contained"
                             color="primary"
                             size="large"
+                            onClick={handleSubmit}
                         >
                             Submit
-                        </Button>
+                        </Button> */}
+                        <TransitionsModal
+                            handleSubmit={handleSubmit}
+                            points={points}
+                        />
                     </div>
                 ) : null}
                 <div>
