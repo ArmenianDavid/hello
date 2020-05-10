@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/anime-test-2/static/css/main.990f86c2.chunk.css",
-    "main.js": "/anime-test-2/static/js/main.c7d72787.chunk.js",
-    "main.js.map": "/anime-test-2/static/js/main.c7d72787.chunk.js.map",
+    "main.css": "/anime-test-2/static/css/main.081f4345.chunk.css",
+    "main.js": "/anime-test-2/static/js/main.3c613182.chunk.js",
+    "main.js.map": "/anime-test-2/static/js/main.3c613182.chunk.js.map",
     "runtime~main.js": "/anime-test-2/static/js/runtime~main.6ed93cde.js",
     "runtime~main.js.map": "/anime-test-2/static/js/runtime~main.6ed93cde.js.map",
-    "static/js/2.3658fc53.chunk.js": "/anime-test-2/static/js/2.3658fc53.chunk.js",
-    "static/js/2.3658fc53.chunk.js.map": "/anime-test-2/static/js/2.3658fc53.chunk.js.map",
+    "static/js/2.a8f5f0a1.chunk.js": "/anime-test-2/static/js/2.a8f5f0a1.chunk.js",
+    "static/js/2.a8f5f0a1.chunk.js.map": "/anime-test-2/static/js/2.a8f5f0a1.chunk.js.map",
     "index.html": "/anime-test-2/index.html",
-    "precache-manifest.12d7c52da279b91764c99f1c43e1aad4.js": "/anime-test-2/precache-manifest.12d7c52da279b91764c99f1c43e1aad4.js",
+    "precache-manifest.a49c47baf87a8d9f76e98f890f43c37c.js": "/anime-test-2/precache-manifest.a49c47baf87a8d9f76e98f890f43c37c.js",
     "service-worker.js": "/anime-test-2/service-worker.js",
-    "static/css/main.990f86c2.chunk.css.map": "/anime-test-2/static/css/main.990f86c2.chunk.css.map",
+    "static/css/main.081f4345.chunk.css.map": "/anime-test-2/static/css/main.081f4345.chunk.css.map",
     "static/media/anime1.jpg": "/anime-test-2/static/media/anime1.41dd3ac5.jpg",
     "static/media/anime2.jpg": "/anime-test-2/static/media/anime2.2d778dc9.jpg",
     "static/media/anime3.jpg": "/anime-test-2/static/media/anime3.d7f8c34e.jpg",
     "static/media/anime4.png": "/anime-test-2/static/media/anime4.718dc0ce.png",
-    "static/media/anime5.png": "/anime-test-2/static/media/anime5.513dce80.png",
-    "static/media/Index.css": "/anime-test-2/static/media/bg.3a089a77.jpg"
+    "static/media/anime5.png": "/anime-test-2/static/media/anime5.513dce80.png"
   }
 }
