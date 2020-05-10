@@ -9,6 +9,8 @@ const HEADER_TITLE_TEXT = "Գուշակիր անիմեն ընդամենը 1 նկ
 
 const App = () => {
     const [checkedAnswers, setCheckedAnswers] = useState([]);
+    const [points, setPoints] = useState(0);
+    let result = 0;
 
     const getCheckedAnswers = (questionId, answerId) => {
         if (checkedAnswers.some((answer) => answer.questionId === questionId)) {
@@ -33,12 +35,34 @@ const App = () => {
         }
     };
 
-    console.log(checkedAnswers);
+    const handleSubmit = () => {
+        checkedAnswers.forEach((checkedAnswer) => {
+            const question = data.find(
+                (question) => question.id === checkedAnswer.questionId
+            );
+            console.log(question);
+            if (question) {
+                const chosenAnswer = question.answers.find(
+                    (answer) => answer.id === checkedAnswer.answerId
+                );
+                if (chosenAnswer.correct) {
+                    result += 1;
+                    setPoints(result);
+                }
+            }
+        });
+    };
+
     return (
         <div className="container">
             <Header title={HEADER_TITLE_TEXT} />
 
-            <List data={data} getCheckedAnswers={getCheckedAnswers} />
+            <List
+                data={data}
+                getCheckedAnswers={getCheckedAnswers}
+                handleSubmit={handleSubmit}
+                points={points}
+            />
         </div>
     );
 };

@@ -7,8 +7,6 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 const SingleQuestion = ({ id, img, answers, getCheckedAnswers }) => {
-    // console.log("id", id, "img", img, "answers", answers);
-
     const [value, setValue] = useState("");
 
     const handleChange = (event) => {

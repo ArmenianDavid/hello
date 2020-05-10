@@ -1,9 +1,5 @@
 .container {
     font: 14px "Century Gothic", Futura, sans-serif;
-    /* background-image: url(./img/bg.jpg);
-    position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
     color: blue;
     min-width: 320px;
     min-height: 100vh;

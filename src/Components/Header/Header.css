@@ -2,6 +2,7 @@
     width: 100%;
     text-align: center;
     position: relative;
+    margin-bottom: 1rem;
 }
 .Header-heading {
     color: aqua;
