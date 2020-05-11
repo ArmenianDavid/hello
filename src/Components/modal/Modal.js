@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) =>
             boxShadow: theme.shadows[5],
             padding: theme.spacing(2, 4, 3),
         },
+        modalTitle: {
+            textAlign: "center",
+        },
     })
 );
 
@@ -59,11 +62,18 @@ export default function TransitionsModal({ handleSubmit, points }) {
             >
                 <Fade in={open}>
                     <div className={classes.paper}>
-                        <h2 id="transition-modal-title">Nice work</h2>
+                        <h2
+                            id="transition-modal-title"
+                            className={classes.modalTitle}
+                        >
+                            Nice work
+                        </h2>
                         <p id="transition-modal-description">
                             You gain{" "}
-                            <span style={{ fontSize: "25px" }}>{points}</span>{" "}
-                            points !!
+                            <span style={{ fontSize: "25px", color: "blue" }}>
+                                {points}
+                            </span>{" "}
+                            <span>{points > 1 ? "points !!" : "point !!"}</span>
                         </p>
                     </div>
                 </Fade>

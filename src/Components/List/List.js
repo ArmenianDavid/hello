@@ -42,14 +42,6 @@ const List = ({ data, getCheckedAnswers, handleSubmit, points }) => {
                 </div>
                 {isLastQuestion ? (
                     <div className="submitButton-container">
-                        {/* <Button
-                            variant="contained"
-                            color="primary"
-                            size="large"
-                            onClick={handleSubmit}
-                        >
-                            Submit
-                        </Button> */}
                         <TransitionsModal
                             handleSubmit={handleSubmit}
                             points={points}
