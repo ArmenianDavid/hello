@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/anime-test-2/static/css/main.081f4345.chunk.css",
-    "main.js": "/anime-test-2/static/js/main.1485ffd3.chunk.js",
-    "main.js.map": "/anime-test-2/static/js/main.1485ffd3.chunk.js.map",
+    "main.css": "/anime-test-2/static/css/main.4371abb5.chunk.css",
+    "main.js": "/anime-test-2/static/js/main.4c568a6e.chunk.js",
+    "main.js.map": "/anime-test-2/static/js/main.4c568a6e.chunk.js.map",
     "runtime~main.js": "/anime-test-2/static/js/runtime~main.6ed93cde.js",
     "runtime~main.js.map": "/anime-test-2/static/js/runtime~main.6ed93cde.js.map",
-    "static/js/2.a8f5f0a1.chunk.js": "/anime-test-2/static/js/2.a8f5f0a1.chunk.js",
-    "static/js/2.a8f5f0a1.chunk.js.map": "/anime-test-2/static/js/2.a8f5f0a1.chunk.js.map",
+    "static/js/2.ade1861a.chunk.js": "/anime-test-2/static/js/2.ade1861a.chunk.js",
+    "static/js/2.ade1861a.chunk.js.map": "/anime-test-2/static/js/2.ade1861a.chunk.js.map",
     "index.html": "/anime-test-2/index.html",
-    "precache-manifest.2305a2b40338c00952e89c91a5fefaf9.js": "/anime-test-2/precache-manifest.2305a2b40338c00952e89c91a5fefaf9.js",
+    "precache-manifest.635d61b1e04e7407b93e937911347702.js": "/anime-test-2/precache-manifest.635d61b1e04e7407b93e937911347702.js",
     "service-worker.js": "/anime-test-2/service-worker.js",
-    "static/css/main.081f4345.chunk.css.map": "/anime-test-2/static/css/main.081f4345.chunk.css.map",
+    "static/css/main.4371abb5.chunk.css.map": "/anime-test-2/static/css/main.4371abb5.chunk.css.map",
     "static/media/anime1.jpg": "/anime-test-2/static/media/anime1.41dd3ac5.jpg",
     "static/media/anime2.jpg": "/anime-test-2/static/media/anime2.2d778dc9.jpg",
     "static/media/anime3.jpg": "/anime-test-2/static/media/anime3.d7f8c34e.jpg",
     "static/media/anime4.png": "/anime-test-2/static/media/anime4.718dc0ce.png",
-    "static/media/anime5.png": "/anime-test-2/static/media/anime5.513dce80.png"
+    "static/media/anime5.png": "/anime-test-2/static/media/anime5.513dce80.png",
+    "static/media/movie1.jpg": "/anime-test-2/static/media/movie1.6608c18a.jpg",
+    "static/media/movie2.jpg": "/anime-test-2/static/media/movie2.d686d734.jpg",
+    "static/media/movie3.jpg": "/anime-test-2/static/media/movie3.9afa304f.jpg",
+    "static/media/movie4.jpg": "/anime-test-2/static/media/movie4.53ddd30b.jpg",
+    "static/media/movie5.jpg": "/anime-test-2/static/media/movie5.7d1b9149.jpg"
   }
 }
