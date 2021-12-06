@@ -2,12 +2,20 @@ import React from "react";
 // components
 import "./Header.css";
 
-const Header = (props) => {
+const Header = ({chooseQuiz}) => {
+    const headers = [{title: 'anime'} , {title: 'movie'}];
     return (
-        <div className="Header">
-            <h1 className="Header-heading"> {props.title}</h1>
+        <div className="header-container">
+            <h1>Ընտրիր վիկտորինաի ոլորտը</h1>
+            <div className="button-container">
+                {headers.map((item, index) => {
+                    return (
+                        <button  onClick={() => chooseQuiz(index)} className="header-btn">{item.title}</button>
+                    )
+                })}
+            </div>
         </div>
-    );
+    )
 };
 
 export default Header;

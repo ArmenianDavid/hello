@@ -9,7 +9,8 @@ import { Card } from "@material-ui/core";
 
 const QUESTIONS_PER_PAGE = 1;
 
-const List = ({ data, getCheckedAnswers, handleSubmit, points }) => {
+const List = ({ data,checkedAnswersByUser, paginationData, getCheckedAnswers, handleSubmit, points, isSubmitted }) => {
+
     const [currentPage, setCurrentPage] = useState(1);
     const indexOfLastQuestion = currentPage * QUESTIONS_PER_PAGE;
     const indexOfFirstQuestion = indexOfLastQuestion - QUESTIONS_PER_PAGE;
@@ -20,9 +21,11 @@ const List = ({ data, getCheckedAnswers, handleSubmit, points }) => {
     );
     const isLastQuestion = currentPage === totalPages;
 
-    const handlePaginationChange = (event, value) => {
-        setCurrentPage(value);
+    const handlePaginationChange = (event) => {
+        setCurrentPage(Number(event.target.innerText));
     };
+
+
 
     return (
         <div className="list-container">
@@ -34,8 +37,10 @@ const List = ({ data, getCheckedAnswers, handleSubmit, points }) => {
                                 key={item.id}
                                 id={item.id}
                                 img={item.img}
+                                checkedAnswersByUser={checkedAnswersByUser}
                                 answers={item.answers}
                                 getCheckedAnswers={getCheckedAnswers}
+                                isSubmitted={isSubmitted}
                             />
                         );
                     })}
@@ -50,8 +55,9 @@ const List = ({ data, getCheckedAnswers, handleSubmit, points }) => {
                 ) : null}
                 <div>
                     <Pagination
-                        totalPages={totalPages}
+                        paginationData={paginationData}
                         handlePaginationChange={handlePaginationChange}
+                        isSubmitted={isSubmitted}
                     />
                 </div>
             </Card>

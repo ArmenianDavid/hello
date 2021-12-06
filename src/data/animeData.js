@@ -1,12 +1,12 @@
 import uuid from "react-uuid";
 // components
-import anime1 from "./Images/anime1.jpg";
-import anime2 from "./Images/anime2.jpg";
-import anime3 from "./Images/anime3.jpg";
-import anime4 from "./Images/anime4.png";
-import anime5 from "./Images/anime5.png";
+import anime1 from "../Components/Images/anime/anime1.jpg";
+import anime2 from "../Components/Images/anime/anime2.jpg";
+import anime3 from "../Components/Images/anime/anime3.jpg";
+import anime4 from "../Components/Images/anime/anime4.png";
+import anime5 from "../Components/Images/anime/anime5.png";
 
-const data = [
+const animeData = [
     {
         id: uuid(),
         img: anime1,
@@ -140,4 +140,4 @@ const data = [
     },
 ];
 
-export default data;
+export default animeData;

@@ -1,16 +1,27 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 // components
 import "./App.css";
-import data from "./Components/data";
+import animeData from "./data/animeData";
+import movieData from "./data/movieData";
 import Header from "./Components/Header/Header";
 import List from "./Components/List/List";
+import Title from "./Components/Title/Title";
 
-const HEADER_TITLE_TEXT = "Գուշակիր անիմեն ընդամենը 1 նկարով";
+const HEADER_TITLES = ["Guess the anime", "Guess the movie"];
+const quizzes = [animeData , movieData];
 
 const App = () => {
+    const [quiz , setQuiz] = useState(1);
+    const [paginationData, setPaginationData] = useState([]);
+    const [isSubmitted, setIsSubmitted] = useState(false);
     const [checkedAnswers, setCheckedAnswers] = useState([]);
     const [points, setPoints] = useState(0);
     let result = 0;
+
+    const chooseQuiz = (quiz) => {
+      setQuiz(quiz);
+      setPoints(0);
+    };
 
     const getCheckedAnswers = (questionId, answerId) => {
         if (checkedAnswers.some((answer) => answer.questionId === questionId)) {
@@ -22,7 +33,6 @@ const App = () => {
                       }
                     : item
             );
-
             setCheckedAnswers(newCheckedAnswers);
         } else {
             setCheckedAnswers([
@@ -35,12 +45,31 @@ const App = () => {
         }
     };
 
+    const changePaginationData = () => {
+       const paginationData = quizzes[quiz].map((item, index) => {
+          const foundAnswer = checkedAnswers.find((answer) => {
+                return answer.questionId === item.id
+            });
+          if(foundAnswer){
+              const correct = item.answers.find((item) => item.id === foundAnswer.answerId).correct;
+              return {'correct': correct, 'pageNumber': index + 1}
+          }
+            return {'correct': false, 'pageNumber': index + 1}
+        });
+        setPaginationData(paginationData);
+    };
+
+    useEffect(() => {
+        changePaginationData();
+    },[checkedAnswers]);
+
+
     const handleSubmit = () => {
+        setIsSubmitted(true);
         checkedAnswers.forEach((checkedAnswer) => {
-            const question = data.find(
+            const question = quizzes[quiz].find(
                 (question) => question.id === checkedAnswer.questionId
             );
-            console.log(question);
             if (question) {
                 const chosenAnswer = question.answers.find(
                     (answer) => answer.id === checkedAnswer.answerId
@@ -55,14 +84,19 @@ const App = () => {
 
     return (
         <div className="container">
-            <Header title={HEADER_TITLE_TEXT} />
-
-            <List
-                data={data}
-                getCheckedAnswers={getCheckedAnswers}
-                handleSubmit={handleSubmit}
-                points={points}
-            />
+            <Header chooseQuiz={chooseQuiz} />
+            <div>
+                <Title title={HEADER_TITLES[quiz]}/>
+                <List
+                    data={quizzes[quiz]}
+                    checkedAnswersByUser={checkedAnswers}
+                    paginationData={paginationData}
+                    getCheckedAnswers={getCheckedAnswers}
+                    handleSubmit={handleSubmit}
+                    points={points}
+                    isSubmitted={isSubmitted}
+                />
+            </div>
         </div>
     );
 };

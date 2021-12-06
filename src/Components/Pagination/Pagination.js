@@ -3,18 +3,14 @@ import PropTypes from "prop-types";
 // components
 import "./Pagination.css";
 // material ui
-import { Pagination as MaterialUiPagination } from "@material-ui/lab";
 
-function Pagination({ totalPages, handlePaginationChange }) {
+function Pagination({ paginationData, handlePaginationChange, isSubmitted }) {
     return (
         <div className="pagination-section">
             <div>
-                <MaterialUiPagination
-                    count={totalPages}
-                    onChange={handlePaginationChange}
-                    shape="rounded"
-                    variant="outlined"
-                />
+                {paginationData.map((item, index) => {
+                    return <button className={ item.correct && isSubmitted ? "correct-answer" : (!item.correct && isSubmitted) ? "wrong-answer" : ''} key={index} onClick={handlePaginationChange}>{item.pageNumber}</button>
+                })}
             </div>
         </div>
     );
@@ -22,7 +18,7 @@ function Pagination({ totalPages, handlePaginationChange }) {
 
 Pagination.propTypes = {
     handlePaginationChange: PropTypes.func.isRequired,
-    totalPages: PropTypes.number.isRequired,
+    paginationData: PropTypes.array.isRequired,
 };
 
 export default Pagination;
